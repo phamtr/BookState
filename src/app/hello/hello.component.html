@@ -1,0 +1,17 @@
+<div>
+	<button type="button" (click)="doAddBook()">Add Book</button>
+</div>
+
+<div>
+	All Books:
+	<ul>
+		<li *ngFor="let book of allBooks$ | async as book">{{book.title}} has {{book.noPages}} pages.</li>
+	</ul>
+</div>
+
+<div>
+	Thick Books:
+	<ul>
+		<li *ngFor="let book of thickBooks$ | async as book">{{book.title}} has {{book.noPages}} pages.</li>
+	</ul>
+</div>
