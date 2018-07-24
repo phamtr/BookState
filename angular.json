@@ -127,5 +127,10 @@
       }
     }
   },
-  "defaultProject": "bookstate"
+  "defaultProject": "bookstate",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

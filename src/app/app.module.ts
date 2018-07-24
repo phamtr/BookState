@@ -10,6 +10,11 @@ import { TutorialState } from '../state/TutorialState'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
+import {
+  MdcButtonModule,
+  MdcFabModule,
+  MdcIconModule,
+} from '@angular-mdc/web';
 
 @NgModule({
   declarations: [
@@ -17,6 +22,9 @@ import { HelloComponent } from './hello/hello.component';
     HelloComponent
   ],
   imports: [
+    MdcButtonModule,
+   MdcFabModule,
+   MdcIconModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
